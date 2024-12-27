@@ -330,14 +330,14 @@ body{
       <input type="hidden" name="access_key" value="ae3a530c-195b-41d2-a265-516d3f0e9f84">
 
     <div class="form-floating mb-3">
-  <input type="text" class="form-control" id="floatingInput" placeholder="name@example.com" name="User Name">
+  <input type="text" class="form-control" id="floatingInput" placeholder="name@example.com" name="User Name :" required>
   <label for="floatingInput">User Name</label>
 </div>
-<div class="form-floating ">
-  <input type="email" class="form-control mb-3" id="floatingPassword" placeholder="Password" name="Email">
-  <label for="floatingPassword">Email Address</label>
+<div class="form-floating">
+  <input type="number" class="form-control mb-3" id="floatingPassword" placeholder="Password" name="Phone-No :" required min="10">
+  <label for="floatingPassword">Phone Number</label>
   <div class="form-floating">
-  <textarea class="form-control mb-3" placeholder="Leave a comment here" id="floatingTextarea" name="Comments"></textarea>
+  <textarea class="form-control mb-3" placeholder="Leave a comment here" id="floatingTextarea" name="Comments :" required></textarea>
   <label for="floatingTextarea">Comments</label>
 </div>
 <button class="btn btn-danger" type="submit">Submit</button>
