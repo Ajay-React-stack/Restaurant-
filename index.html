@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Personal Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"  />
+</head>
+<style>
+body{
+  background-color : black;
+}
+  h5 p{
+    color : black;
+  }
+  #carouselExampleInterval{
+    transition : 1s ease;
+  }
+  @media screen and (max-width:600px){
+    .img{
+      display : none;
+    }
+  }
+  .navbar-toggler{
+    color : white;
+    transition : 1s ease;
+    cursor : pointer;
+  }
+  #cart{
+    padding : 5px;
+    background-color : transparent;
+    border : none;
+    color : white;
+  }
+  #close{
+    background-color : transparent;
+    border : none;
+    color : white;
+    margin-left : 180px;
+  }
+  #row .col img{
+    width : 18rem;
+    height : 180px;
+  }
+  #clbtn{
+    color : white;
+  }
+  #ctr{
+    color : white;
+  }
+  .img{
+    width : 650px;
+  }
+  #nav{
+    position : sticky;
+  }
+  html{
+    scroll-behavior: smooth;
+  }
+  #offcanvasResponsive{
+    z-index: 1;
+  }
+  #carousel{
+    z-index: 0;
+  }
+</style>
+<body>
+
+<!--Navbar Section-->
+<nav class="navbar navbar-expand-lg bg-warning" id="nav">
+  <div class="container-fluid">
+    <a class="navbar-brand text-danger" href="#">Cheeky Chef🍔</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active text-light" aria-current="page" href="#nav">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active text-light" href="#card">Variety</a>
+        </li>
+             <li class="nav-item">
+          <a class="nav-link active text-light" href="#des">Deserts</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active link-light" href="#pow">Pick Of the Week</a>
+        <li class="nav-item">
+          <a class="nav-link active link-light" href="#con">Contact</a>
+        </li>
+        <li class="nav-item">
+          <button class="" data-bs-toggle="offcanvas" data-bs-target="#offcanvasResponsive"
+          aria-control="offcanvasResponsivetype" id="cart"><i class="fa-solid fa-cart-shopping"></i></button>
+
+<div class="alert alert-info d-none d-lg-block">Resize your browser to show the responsive offcanvas toggle.</div>
+
+<div class="offcanvas-lg offcanvas-end" tabindex="-1" id="offcanvasResponsive" aria-labelledby="offcanvasResponsiveLabel">
+  <div class="offcanvas-header bg-dark text-white">
+    <h5 class="offcanvas-title" id="offcanvasResponsiveLabel">Your Cart</h5>
+    <button type="button" data-bs-dismiss="offcanvas" data-bs-target="#offcanvasResponsive" aria-label="Close" id="close"><i class="fa-solid fa-xmark"></i></button>
+  </div>
+  <div class="offcanvas-body bg-dark text-white">
+    
+  </div>
+</div>
+        </li>
+      </ul>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-light btn btn-success text-light" type="submit">Search</button>
+      </form>
+    </div>
+</div>
+</div>
+
+</nav>
+
+
+<!--Carousel Or Hero Section-->
+
+<center>
+<h1 class="display-5 mt-3 text-light mb-2">New Picks !</h1>
+</center>
+
+<div id="carouselExampleDark" class="carousel carousel-light slide">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner" id="carousel">
+    <div class="carousel-item active" data-bs-interval="1000">
+      <img src="th.jpeg" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Cheese Pizza</h5>
+      </div>
+    </div>
+    <div class="carousel-item" data-bs-interval="1000">
+      <img src="th (1).jpeg" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Pepperonie</h5>
+      </div>
+    </div>
+    <div class="carousel-item" data-bs-intervel="1000">
+      <img src="th (2).jpeg" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Spicy Hot Sauce Pizza</h5>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev" id="ctr">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+<!--Famous Food <section></section>-->
+
+<div class="container" id="card">
+  <div class="row" id="row">
+    <div class="col">
+      <div class="card mt-5" style="width: 18rem;">
+  <img src="th.jpeg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Card title</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Order Now!</a>
+  </div>
+</div>
+    </div>
+    
+    
+    <div class="col"><div class="card mt-5" style="width: 18rem;">
+  <img src="th (3).jpeg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Card title</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="#" class="btn btn-primary"data-bs-toggle="modal" data-bs-target="#exampleModal">Order Now!</a>
+  </div>
+</div></div>
+    
+    
+    <div class="col"><div class="card mt-3" style="width: 18rem;">
+  <img src="th (1).jpeg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Card title</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="#" class="btn btn-primary"data-bs-toggle="modal" data-bs-target="#exampleModal">Order Now!</a>
+  </div>
+</div></div>
+    
+    
+    <div class="col"><div class="card mt-3" style="width: 18rem;">
+  <img src="th (4).jpeg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Card title</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="#" class="btn btn-primary"data-bs-toggle="modal" data-bs-target="#exampleModal">Order Now!</a>
+  </div>
+</div></div>
+    
+    
+    <div class="col"><div class="card mt-3" style="width: 18rem;">
+  <img src="th (2).jpeg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Card title</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="#" class="btn btn-primary"data-bs-toggle="modal" data-bs-target="#exampleModal">Order Now!</a>
+  </div>
+</div></div>
+    
+    
+    <div class="col"><div class="card mt-3" style="width: 18rem;">
+  <img src="th (5).jpeg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Card title</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="#" class="btn btn-primary"data-bs-toggle="modal" data-bs-target="#exampleModal">Order Now!</a>
+  </div>
+</div></div>
+    
+    
+  </div>
+</div>
+
+<!--Toast Message Code-->
+
+
+<div class="toast-container position-fixed bottom-0 end-0 p-3">
+  <div id="liveToast" class="toast bg-dark text-white" role="alert" aria-live="assertive" aria-atomic="true">
+    <div class="toast-header bg-success text-white">
+      <strong class="me-auto">Added</strong>
+      <small>11 mins ago</small>
+      <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close" id="clbtn"></button>
+    </div>
+    <div class="toast-body">
+      Receipe Added To Your Cart Successfully...
+    </div>
+  </div>
+</div>
+
+<!-- Modal -->
+
+
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header bg-dark text-white">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Added</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body bg-dark text-white">
+      Item Added To Your Cart Successfully...
+      </div>
+      <div class="modal-footer bg-dark text-white">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--Desert Section-->
+<center>
+<p class="display-3 mt-5 text-success">Top Deserts In Cheeky Chef🍨</p>
+</center>
+<div class="container" id="des">
+  <div class="row" id="row">
+    <div class="col">
+      <div class="card mb-3" style="width: 18rem;">
+  <img src="th (6).jpeg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <p class="card-text">It is made by blending in fresh strawberries or strawberry flavoring with the eggs, cream, vanilla, and sugar used to make ice cream.</p>
+  </div>
+</div>
+    </div>
+    <div class="col">
+      <div class="card mb-3" style="width: 18rem;">
+  <img src="th (7).jpeg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <p class="card-text">It is made by blending in fresh strawberries or strawberry flavoring with the eggs, cream, vanilla, and sugar used to make ice cream.</p>
+  </div>
+</div>
+    </div>
+    <div class="col">
+      <div class="card mb-3" style="width: 18rem;">
+  <img src="th (8).jpeg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <p class="card-text">Chocolate ice cream became popular in the United States in the late nineteenth century. The first advertisement for ice cream in America started in New York</p>
+  </div>
+</div>
+    </div>
+    <div class="col">
+    <div class="card mb-3" style="width: 18rem;">
+  <img src="th (9).jpeg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <p class="card-text">Chocolate ice cream became popular in the United States in the late nineteenth century. The first advertisement for ice cream in America started in New York</p>
+  </div>
+</div>
+    </div>
+  </div>
+</div>
+
+<!--Pick of the Week-->
+
+<div class="container" id="pow">
+  <center>
+<p class="display-5 text-danger">Pick Of The Week</p>
+</center>
+
+<img src="th (1).jpeg" alt="" class="img"><br>
+<center>
+ <p class="h1 text-danger mt-3 mb-3">🥳  Cheese Pizza 🍕 </p>
+<button class="btn btn-danger mb-5" id="liveToastBtn">Add To Cart</button>
+</center>
+</div>
+
+<!--Contact Section-->
+
+<div class="container" id="con">
+  <div class="form-control p-4">
+    <p class="display-5">Contact Us</p>
+    <form action="https://api.web3forms.com/submit" method="POST">
+      <input type="hidden" name="access_key" value="ae3a530c-195b-41d2-a265-516d3f0e9f84">
+
+    <div class="form-floating mb-3">
+  <input type="text" class="form-control" id="floatingInput" placeholder="name@example.com" name="User Name">
+  <label for="floatingInput">User Name</label>
+</div>
+<div class="form-floating ">
+  <input type="email" class="form-control mb-3" id="floatingPassword" placeholder="Password" name="Email">
+  <label for="floatingPassword">Email Address</label>
+  <div class="form-floating">
+  <textarea class="form-control mb-2" placeholder="Leave a comment here" id="floatingTextarea" name="Comments"></textarea>
+  <label for="floatingTextarea">Comments</label>
+</div>
+<button class="btn btn-danger" type="submit">Submit</button>
+</div>
+    </form>
+  </div>
+</div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+ <script src="app.js"></script>
+</html>
